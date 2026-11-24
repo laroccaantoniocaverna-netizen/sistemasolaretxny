@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il sito dentro il sito</title>
+<link rel="stylesheet" href="generale.css">
+</head>
+<body>
+<header>
+<h1>Il sito dentro il sito</h1>
+<p>A sinistra il mini-sito sul Sistema Solare: naviga come in un sito vero. A destra il codice che lo costruisce: clicca <b>vedi ▸</b> per saltare all'elemento.</p>
+</header>
+<main>
+<section class="browser">
+<div class="barra"><span class="pallini"></span>Mini-sito sul Sistema Solare</div>
+<iframe name="sito" src="minisito/index.html" title="Mini-sito sul Sistema Solare"></iframe>
+</section>
+<div class="destra">
+<section class="box">
+<div class="titolo"><b>HTML</b> <span><a href="#cod-index">index.html</a> · <a href="#cod-pianeti">pianeti.html</a> · <a href="#cod-curiosita">curiosita.html</a></span></div>
+<div class="codice"><h3 class="file" id="cod-index">index.html</h3><pre><span class="tg">&lt;!DOCTYPE html&gt;</span>
+<span class="tg">&lt;html</span> <span class="at">lang</span>=<span class="va">"it"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;head</span><span class="tg">&gt;</span>
+<span class="tg">&lt;meta</span> <span class="at">charset</span>=<span class="va">"UTF-8"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;title</span><span class="tg">&gt;</span>Sistema Solare - Home<span class="tg">&lt;/title</span><span class="tg">&gt;</span>
+<span class="tg">&lt;link</span> <span class="at">rel</span>=<span class="va">"stylesheet"</span> <span class="at">href</span>=<span class="va">"stile.css"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/head</span><span class="tg">&gt;</span>
+<span class="tg">&lt;body</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- titolo principale (ha un id: è il punto di arrivo di "Torna su") --&gt;</span>
+<span class="tg">&lt;h1</span> <span class="at">id</span>=<span class="va">"inizio"</span><span class="tg">&gt;</span>Il Sistema Solare<span class="tg">&lt;/h1</span><span class="tg">&gt;</span> <a class="vai" href="minisito/index.html#inizio" target="sito">vedi ▸</a>
+<span class="c">&lt;!-- menu: link verso le altre pagine del sito --&gt;</span>
+<span class="tg">&lt;p</span> <span class="at">class</span>=<span class="va">"menu"</span><span class="tg">&gt;</span><span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"index.html"</span><span class="tg">&gt;</span>Home<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"pianeti.html"</span><span class="tg">&gt;</span>Pianeti<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"curiosita.html"</span><span class="tg">&gt;</span>Curiosità<span class="tg">&lt;/a</span><span class="tg">&gt;</span><span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>Il Sistema Solare è formato dal Sole e da tutto ciò che gli gira intorno: pianeti, lune, asteroidi e comete.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- immagine: src è il percorso del file, alt la sua descrizione --&gt;</span>
+<span class="tg">&lt;img</span> <span class="at">src</span>=<span class="va">"immagini/sistema-solare.svg"</span> <span class="at">alt</span>=<span class="va">"Il Sole al centro con le orbite dei pianeti"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;h2</span><span class="tg">&gt;</span>Una citazione<span class="tg">&lt;/h2</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- citazione --&gt;</span>
+<span class="tg">&lt;blockquote</span><span class="tg">&gt;</span>Siamo fatti di materia stellare. (Carl Sagan)<span class="tg">&lt;/blockquote</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- link esterno: porta a un altro sito --&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>Per saperne di più visita il sito della <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"https://www.nasa.gov"</span> <span class="at">target</span>=<span class="va">"_blank"</span><span class="tg">&gt;</span>NASA<span class="tg">&lt;/a</span><span class="tg">&gt;</span>.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- link interno: porta a un punto della stessa pagina --&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span><span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"#inizio"</span><span class="tg">&gt;</span>Torna su<span class="tg">&lt;/a</span><span class="tg">&gt;</span><span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/body</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/html</span><span class="tg">&gt;</span></pre><h3 class="file" id="cod-pianeti">pianeti.html</h3><pre><span class="tg">&lt;!DOCTYPE html&gt;</span>
+<span class="tg">&lt;html</span> <span class="at">lang</span>=<span class="va">"it"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;head</span><span class="tg">&gt;</span>
+<span class="tg">&lt;meta</span> <span class="at">charset</span>=<span class="va">"UTF-8"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;title</span><span class="tg">&gt;</span>Sistema Solare - Pianeti<span class="tg">&lt;/title</span><span class="tg">&gt;</span>
+<span class="tg">&lt;link</span> <span class="at">rel</span>=<span class="va">"stylesheet"</span> <span class="at">href</span>=<span class="va">"stile.css"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/head</span><span class="tg">&gt;</span>
+<span class="tg">&lt;body</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- titolo principale (ha un id: è il punto di arrivo di "Torna su") --&gt;</span>
+<span class="tg">&lt;h1</span> <span class="at">id</span>=<span class="va">"inizio"</span><span class="tg">&gt;</span>I pianeti<span class="tg">&lt;/h1</span><span class="tg">&gt;</span> <a class="vai" href="minisito/pianeti.html#inizio" target="sito">vedi ▸</a>
+<span class="c">&lt;!-- menu: link verso le altre pagine del sito --&gt;</span>
+<span class="tg">&lt;p</span> <span class="at">class</span>=<span class="va">"menu"</span><span class="tg">&gt;</span><span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"index.html"</span><span class="tg">&gt;</span>Home<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"pianeti.html"</span><span class="tg">&gt;</span>Pianeti<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"curiosita.html"</span><span class="tg">&gt;</span>Curiosità<span class="tg">&lt;/a</span><span class="tg">&gt;</span><span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- link interni: portano ai titoli più in basso, che hanno un id --&gt;</span>
+<span class="tg">&lt;p</span> <span class="at">class</span>=<span class="va">"menu"</span><span class="tg">&gt;</span><span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"#mercurio"</span><span class="tg">&gt;</span>Mercurio<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"#terra"</span><span class="tg">&gt;</span>Terra<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"#marte"</span><span class="tg">&gt;</span>Marte<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"#giove"</span><span class="tg">&gt;</span>Giove<span class="tg">&lt;/a</span><span class="tg">&gt;</span><span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;h2</span> <span class="at">id</span>=<span class="va">"mercurio"</span><span class="tg">&gt;</span>Mercurio<span class="tg">&lt;/h2</span><span class="tg">&gt;</span> <a class="vai" href="minisito/pianeti.html#mercurio" target="sito">vedi ▸</a>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>È il pianeta più vicino al Sole e il più piccolo di tutti.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;img</span> <span class="at">src</span>=<span class="va">"immagini/mercurio.svg"</span> <span class="at">alt</span>=<span class="va">"Mercurio, un pianeta grigio con crateri"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;h2</span> <span class="at">id</span>=<span class="va">"terra"</span><span class="tg">&gt;</span>Terra<span class="tg">&lt;/h2</span><span class="tg">&gt;</span> <a class="vai" href="minisito/pianeti.html#terra" target="sito">vedi ▸</a>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>È il nostro pianeta, l'unico dove sappiamo che esiste la vita.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;img</span> <span class="at">src</span>=<span class="va">"immagini/terra.svg"</span> <span class="at">alt</span>=<span class="va">"La Terra, un pianeta blu con nuvole"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;h2</span> <span class="at">id</span>=<span class="va">"marte"</span><span class="tg">&gt;</span>Marte<span class="tg">&lt;/h2</span><span class="tg">&gt;</span> <a class="vai" href="minisito/pianeti.html#marte" target="sito">vedi ▸</a>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>Si chiama anche pianeta rosso per il colore della sua superficie.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;img</span> <span class="at">src</span>=<span class="va">"immagini/marte.svg"</span> <span class="at">alt</span>=<span class="va">"Marte, un pianeta rosso"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;h2</span> <span class="at">id</span>=<span class="va">"giove"</span><span class="tg">&gt;</span>Giove<span class="tg">&lt;/h2</span><span class="tg">&gt;</span> <a class="vai" href="minisito/pianeti.html#giove" target="sito">vedi ▸</a>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>È il pianeta più grande del Sistema Solare.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;img</span> <span class="at">src</span>=<span class="va">"immagini/giove.svg"</span> <span class="at">alt</span>=<span class="va">"Giove con le sue fasce arancioni"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span><span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"#inizio"</span><span class="tg">&gt;</span>Torna su<span class="tg">&lt;/a</span><span class="tg">&gt;</span><span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/body</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/html</span><span class="tg">&gt;</span></pre><h3 class="file" id="cod-curiosita">curiosita.html</h3><pre><span class="tg">&lt;!DOCTYPE html&gt;</span>
+<span class="tg">&lt;html</span> <span class="at">lang</span>=<span class="va">"it"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;head</span><span class="tg">&gt;</span>
+<span class="tg">&lt;meta</span> <span class="at">charset</span>=<span class="va">"UTF-8"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;title</span><span class="tg">&gt;</span>Sistema Solare - Curiosità<span class="tg">&lt;/title</span><span class="tg">&gt;</span>
+<span class="tg">&lt;link</span> <span class="at">rel</span>=<span class="va">"stylesheet"</span> <span class="at">href</span>=<span class="va">"stile.css"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/head</span><span class="tg">&gt;</span>
+<span class="tg">&lt;body</span><span class="tg">&gt;</span>
+<span class="c">&lt;!-- titolo principale (ha un id: è il punto di arrivo di "Torna su") --&gt;</span>
+<span class="tg">&lt;h1</span> <span class="at">id</span>=<span class="va">"inizio"</span><span class="tg">&gt;</span>Curiosità<span class="tg">&lt;/h1</span><span class="tg">&gt;</span> <a class="vai" href="minisito/curiosita.html#inizio" target="sito">vedi ▸</a>
+<span class="c">&lt;!-- menu: link verso le altre pagine del sito --&gt;</span>
+<span class="tg">&lt;p</span> <span class="at">class</span>=<span class="va">"menu"</span><span class="tg">&gt;</span><span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"index.html"</span><span class="tg">&gt;</span>Home<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"pianeti.html"</span><span class="tg">&gt;</span>Pianeti<span class="tg">&lt;/a</span><span class="tg">&gt;</span> | <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"curiosita.html"</span><span class="tg">&gt;</span>Curiosità<span class="tg">&lt;/a</span><span class="tg">&gt;</span><span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;h2</span><span class="tg">&gt;</span>Lo sapevi che...<span class="tg">&lt;/h2</span><span class="tg">&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>Il Sole contiene oltre il 99% di tutta la massa del Sistema Solare.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>La luce del Sole impiega circa 8 minuti per arrivare sulla Terra.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>La Grande Macchia Rossa di Giove è una tempesta più grande della Terra.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;img</span> <span class="at">src</span>=<span class="va">"immagini/sole.svg"</span> <span class="at">alt</span>=<span class="va">"Il Sole, una stella gialla"</span><span class="tg">&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span>Vuoi approfondire? Leggi la pagina di <span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"https://it.wikipedia.org/wiki/Sistema_solare"</span> <span class="at">target</span>=<span class="va">"_blank"</span><span class="tg">&gt;</span>Wikipedia<span class="tg">&lt;/a</span><span class="tg">&gt;</span> sul Sistema Solare.<span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;p</span><span class="tg">&gt;</span><span class="tg">&lt;a</span> <span class="at">href</span>=<span class="va">"pianeti.html"</span><span class="tg">&gt;</span>Vai ai pianeti<span class="tg">&lt;/a</span><span class="tg">&gt;</span><span class="tg">&lt;/p</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/body</span><span class="tg">&gt;</span>
+<span class="tg">&lt;/html</span><span class="tg">&gt;</span></pre></div>
+</section>
+<section class="box">
+<div class="titolo"><b>CSS</b></div>
+<div class="codice"><h3 class="file">stile.css</h3><pre><span class="c">/* Colori e testo di tutta la pagina */</span>
+<span class="tg">body </span>{
+  <span class="at">font-family</span>: <span class="va">Arial, sans-serif</span>;
+  <span class="at">background-color</span>: <span class="va">#101830</span>;
+  <span class="at">color</span>: <span class="va">#e8ecff</span>;
+  <span class="at">max-width</span>: <span class="va">560px</span>;
+  <span class="at">margin</span>: <span class="va">20px auto</span>;
+  <span class="at">line-height</span>: <span class="va">1.5</span>;
+}
+<span class="c">/* Titoli */</span>
+<span class="tg">h1 </span>{ <span class="at">color</span>: <span class="va">#ffd166</span>; }
+<span class="tg">h2 </span>{ <span class="at">color</span>: <span class="va">#8ecae6</span>; }
+<span class="c">/* Link */</span>
+<span class="tg">a </span>{ <span class="at">color</span>: <span class="va">#ffd166</span>; }
+<span class="c">/* Immagini */</span>
+<span class="tg">img </span>{ <span class="at">width</span>: <span class="va">320px</span>; <span class="at">border-radius</span>: <span class="va">8px</span>; }
+<span class="c">/* Citazioni */</span>
+<span class="tg">blockquote </span>{ <span class="at">border-left</span>: <span class="va">4px solid #ffd166</span>; <span class="at">padding-left</span>: <span class="va">12px</span>; <span class="at">font-style</span>: <span class="va">italic</span>; }
+<span class="c">/* Menu: vale solo per gli elementi con class="menu" */</span>
+<span class="tg">.menu </span>{ <span class="at">background-color</span>: <span class="va">#1d2a52</span>; <span class="at">padding</span>: <span class="va">10px</span>; }</pre></div>
+</section>
+</div>
+</main>
+</body>
+</html>

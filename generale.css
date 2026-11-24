@@ -1,0 +1,32 @@
+/* Stile della pagina generale: questa parte NON va spiegata alla lavagna */
+* { box-sizing: border-box; }
+body { margin: 0; height: 100vh; display: flex; flex-direction: column; font-family: system-ui, sans-serif; background: #0a0f22; color: #e6e9f7; }
+header { padding: 14px 24px; background: linear-gradient(90deg, #14183a, #2b1a5c); }
+header h1 { margin: 0; font-size: 1.4rem; }
+header p { margin: 4px 0 0; color: #aeb4dc; font-size: .9rem; }
+main { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px; }
+.browser, .box { min-height: 0; display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; box-shadow: 0 8px 30px #0009; }
+.browser { background: #fff; }
+.barra { display: flex; align-items: center; padding: 8px 12px; background: #e5e7eb; color: #333; font-size: 13px; }
+.pallini { width: 10px; height: 10px; border-radius: 50%; background: #ef4444; box-shadow: 16px 0 #f59e0b, 32px 0 #22c55e; margin-right: 48px; }
+iframe { flex: 1; width: 100%; border: 0; }
+.destra { min-height: 0; display: grid; grid-template-rows: 3fr 2fr; gap: 16px; }
+.box { background: #0f1530; }
+.titolo { padding: 8px 14px; background: #1a2040; font-size: .85rem; color: #9aa1cc; }
+.titolo b { color: #fff; margin-right: 12px; }
+.titolo a { color: #8ecae6; }
+.codice { flex: 1; overflow: auto; padding: 12px 14px; scroll-behavior: smooth; }
+.file { margin: 0 0 6px; font: 600 12px ui-monospace, Consolas, monospace; color: #7f89bd; }
+pre { margin: 0 0 22px; font: 13px/1.65 ui-monospace, Consolas, monospace; color: #d6dcf5; }
+.tg { color: #ff8fa3; }
+.at { color: #ffd166; }
+.va { color: #8ecae6; }
+.c { color: #6f7fb5; font-style: italic; }
+.vai { margin-left: 8px; padding: 0 6px; background: #ffd166; color: #0a0f22; border-radius: 4px; font-size: 11px; text-decoration: none; }
+@media (max-width: 900px) {
+  body { height: auto; }
+  main { grid-template-columns: 1fr; }
+  iframe { height: 60vh; }
+  .destra { grid-template-rows: auto auto; }
+  .codice { max-height: 45vh; }
+}
